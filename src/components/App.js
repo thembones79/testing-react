@@ -4,7 +4,8 @@ import CommentList from "components/CommentList";
 
 export default () => {
   return (
-    <div>
+    <div className="container is-fluid">
+      <h1 className="title">Comment Component</h1>
       <CommentBox />
       <CommentList />
     </div>
