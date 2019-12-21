@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actions from "actions";
+import "components/CommentBox.css";
 
 class CommentBox extends Component {
   state = { comment: "" };
@@ -40,6 +41,16 @@ class CommentBox extends Component {
             </div>
           </div>
         </form>
+        <div className="field">
+          <div className="control">
+            <button
+              onClick={this.props.fetchComments}
+              className="fetch-comments button is-primary is-outlined box is-pulled-right"
+            >
+              Fetch Comments ←
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
